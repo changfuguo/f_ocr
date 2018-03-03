@@ -1,8 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/index/finished",
-    "pages/ui/index"
+    "pages/home/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

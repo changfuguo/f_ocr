@@ -40,6 +40,7 @@
     "redux-actions": "^1.2.1",
     "redux-logger": "^2.8.1",
     "redux-persist": "^4.3.0",
+    "redux-promise": "^0.5.3",
     "redux-saga": "^0.13.0",
     "regenerator-runtime": "^0.10.1",
     "seamless-immutable": "^6.3.0"

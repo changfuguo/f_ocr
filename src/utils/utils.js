@@ -1,7 +1,20 @@
-export function add(a, b) {
-  return a + b;
-}
 
-export function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+export function authorize(scope){
+    return new Promise((resolve, reject) => {
+          wx.getSetting({
+            success(res) {
+                if (!res.authSetting[scope]) {
+                    wx.authorize({
+                        scope: scope,
+                        success(err) {
+                            resolve('')
+                        },
+                        fail(err) {
+                            reject('')
+                        }
+                    })
+                }
+            }
+        })
+    });
 }
